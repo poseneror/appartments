@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Appartments</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="main_acticity_label">Main</string>
+    <string name="title_activity_new_appartment">NewAppartmentActivity</string>
+    <string name="title_activity_apartment_details">Apartment Details</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
