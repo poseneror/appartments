@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Apartments Application</display-name>
+    <description>
+        This is a simple web application with a source code organization
+        based on the recommendations of the Application Developer's Guide.
+    </description>
+
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>Main</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetServlet</servlet-name>
+        <servlet-class>GetNearby</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetServlet</servlet-name>
+        <url-pattern>/GetNearby</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PostServlet</servlet-name>
+        <servlet-class>PostApartment</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PostServlet</servlet-name>
+        <url-pattern>/PostApartment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>NewSellerServlet</servlet-name>
+    <servlet-class>NewSeller</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NewSellerServlet</servlet-name>
+        <url-pattern>/NewSeller</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SigninServlet</servlet-name>
+        <servlet-class>Signin</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SigninServlet</servlet-name>
+        <url-pattern>/Signin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetApartmentServlet</servlet-name>
+        <servlet-class>GetApartment</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetApartmentServlet</servlet-name>
+        <url-pattern>/GetApartment</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+</web-app>
